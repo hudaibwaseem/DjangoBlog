@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "DJANGO_PROJECT/wsgi.py",
+        "src": "django_project/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb" }
       }
@@ -10,7 +10,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "DJANGO_PROJECT/wsgi.py"
+        "dest": "django_project/wsgi.py"
       }
     ]
   }
